@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">ListView</string>
+    <string name="titulo">OPCIONES</string>
+    <string name="area">AREAS</string>
+    <string name="volumen">Volumenes</string>
+    <string name="operaciones">Operaciones Realizadas</string>
+    <string name="tituloareas">AREAS</string>
+    <string name="cuadrado">CUADRADO</string>
+    <string name="rectangulo">RECTÁNGULO</string>
+    <string name="triangulo">TRIÁNGULO</string>
+    <string name="circulo">CÍRCULO</string>
+    <string name="volumenes">VOLÚMENES</string>
+    <string name="esfera">Esfera</string>
+    <string name="cilindro">Cilindro</string>
+    <string name="cono">Cono</string>
+    <string name="cubo">Cubo</string>
+    <string name="realizadas">REALIZADAS</string>
+    <string name="numero">No.</string>
+    <string name="operacion">Operación</string>
+    <string name="datos">Datos</string>
+    <string name="resultados">Resultados</string>
 </resources>

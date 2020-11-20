@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Volumenes">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtTituloVolumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volumenes"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnEsfera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/esfera"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCilindro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cilindro"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cono"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCubo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cubo"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

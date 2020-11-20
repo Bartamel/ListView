@@ -8,14 +8,37 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lblTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnArea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/area"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVolumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volumen"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnOperaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/operaciones"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
 </LinearLayout>

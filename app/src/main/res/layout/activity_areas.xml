@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Areas">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtTitleAreas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloareas"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCuadrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cuadrado"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRectangulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rectangulo"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnTriangulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/triangulo"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCirculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/circulo"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
