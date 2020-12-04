@@ -16,41 +16,9 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/lstAreas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" />
 
-        <Button
-            android:id="@+id/btnCuadrado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cuadrado"
-            android:textAlignment="viewStart"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnRectangulo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/rectangulo"
-            android:textAlignment="viewStart"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnTriangulo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/triangulo"
-            android:textAlignment="viewStart"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnCirculo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/circulo"
-            android:textAlignment="viewStart"
-            android:textStyle="bold" />
-    </LinearLayout>
 </LinearLayout>

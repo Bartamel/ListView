@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ListView">
-        <activity android:name=".Operaciones_Realizadas"></activity>
+        <activity android:name=".Area_Circulos"></activity>
+        <activity android:name=".Area_Triangulos" />
+        <activity android:name=".Area_Rectangulos" />
+        <activity android:name=".Area_Cuadrados" />
+        <activity android:name=".Operaciones_Realizadas" />
         <activity android:name=".Volumenes" />
         <activity android:name=".Areas" />
         <activity android:name=".MainActivity">

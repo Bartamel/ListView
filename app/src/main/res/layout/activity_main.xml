@@ -17,28 +17,9 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnArea"
+    <ListView
+        android:id="@+id/lstOpciones"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/area"
-        android:textAlignment="viewStart"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnVolumen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/volumen"
-        android:textAlignment="viewStart"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnOperaciones"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/operaciones"
-        android:textAlignment="viewStart"
-        android:textStyle="bold" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>
