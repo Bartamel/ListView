@@ -21,6 +21,10 @@
     <string name="resultados">Resultados</string>
     <string name="valor_lado">Valor del Lado</string>
     <string name="valor">Valor</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="radio">Radio</string>
+    <string name="profundidad">Profundidad</string>
     <string name="calcular">CALCULAR</string>
     <string name="borrar">BORRAR</string>
     <string-array name="opciones">

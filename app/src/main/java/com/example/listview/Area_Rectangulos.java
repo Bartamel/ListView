@@ -9,6 +9,6 @@ public class Area_Rectangulos extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rectangulo);
+        setContentView(R.layout.activity_area_rectangulo);
     }
 }
