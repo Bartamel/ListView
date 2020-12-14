@@ -26,9 +26,11 @@ public class Area_Cuadrados extends AppCompatActivity {
         String op = "Area Cuadrado";
         operaciones o;
 
-        lado = new String[1];
+        lado = new String[3];
         lados = Float.parseFloat(lad.getText().toString());
         lado[0] = String.format("Lado: %.2f", lados);
+        lado[1] = "";
+        lado[2] = "";
         area = Float.toString(lados * lados);
         System.out.println(area);
         o = new operaciones(op, lado, area);

@@ -11,9 +11,10 @@ public class operaciones {
         this.resultado = resultado;
     }
 
-    public String[] getDatos() {
-        return datos;
+    public String getDatos1() {
+        return datos[0];
     }
+    public String getDatos2(){return datos[1];}
 
     public void setDatos(String[] datos) {
         this.datos = datos;

@@ -38,4 +38,10 @@
         <item>@string/triangulo</item>
         <item>@string/circulo</item>
     </string-array>
+    <string-array name="opciones_volumen">
+        <item>@string/esfera</item>
+        <item>@string/cilindro</item>
+        <item>@string/cono</item>
+        <item>@string/cubo</item>
+    </string-array>
 </resources>
