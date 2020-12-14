@@ -20,19 +20,29 @@ public class Vol_Cubo extends AppCompatActivity {
     }
     public void calcular(View v){
         String medidas[];
-        String op = "Volumen Cubo";
+        String op = getString(R.string.volumen_cubo);
         String volumen;
         float lad;
         operaciones o;
-
         medidas = new String[2];
-        lad = Float.parseFloat(lado.getText().toString());
-        volumen = Float.toString((lad*lad*lad));
-        medidas[0] = String.format("Lados: %.2f", lad);
-        medidas[1] = "";
-        o = new operaciones(op, medidas, volumen);
-        o.guardar();
-        resultado.setText(volumen);
+
+        if (validar()) {
+            lad = Float.parseFloat(lado.getText().toString());
+            volumen = Float.toString((lad * lad * lad));
+            medidas[0] = String.format(getString(R.string.salida_altura)+" %.2f", lad);
+            medidas[1] = "";
+            o = new operaciones(op, medidas, volumen);
+            o.guardar();
+            resultado.setText(volumen);
+        }
+    }
+    public boolean validar(){
+        if (lado.getText().toString().isEmpty()){
+            lado.setError(getString(R.string.error_vacio));
+            lado.requestFocus();
+            return false;
+        }
+        return true;
     }
     public void Limpiar(View v){
         lado.setText("");

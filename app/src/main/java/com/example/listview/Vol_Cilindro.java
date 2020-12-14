@@ -22,23 +22,38 @@ public class Vol_Cilindro extends AppCompatActivity {
     }
     public void calcular(View v){
         String medidas[];
-        String op = "Volumen Cilindro";
+        String op = getString(R.string.volumen_cilindro);
         String volumen;
         float rad;
         float alt;
         float pi;
         operaciones o;
-
         medidas = new String[2];
-        rad = Float.parseFloat(radio.getText().toString());
-        alt = Float.parseFloat(altura.getText().toString());
-        pi = (float) Math.PI;
-        volumen = Float.toString((pi*alt*rad*rad));
-        medidas[0] = String.format("Radio %.2f", rad);
-        medidas[1] = String.format("Altura %.2f", alt);
-        o = new operaciones(op, medidas, volumen);
-        o.guardar();
-        resultados.setText(volumen);
+
+        if (validar()) {
+            rad = Float.parseFloat(radio.getText().toString());
+            alt = Float.parseFloat(altura.getText().toString());
+            pi = (float) Math.PI;
+            volumen = Float.toString((pi * alt * rad * rad));
+            medidas[0] = String.format(getString(R.string.salida_radio)+" %.2f", rad);
+            medidas[1] = String.format(getString(R.string.salida_altura)+" %.2f", alt);
+            o = new operaciones(op, medidas, volumen);
+            o.guardar();
+            resultados.setText(volumen);
+        }
+    }
+    public boolean validar(){
+        if (radio.getText().toString().isEmpty()){
+            radio.setError(getString(R.string.error_vacio));
+            radio.requestFocus();
+            return false;
+        }
+        if (altura.getText().toString().isEmpty()){
+            altura.setError(getString(R.string.error_vacio));
+            altura.requestFocus();
+            return false;
+        }
+        return true;
     }
     public void Limpiar(View v){
         radio.setText("");

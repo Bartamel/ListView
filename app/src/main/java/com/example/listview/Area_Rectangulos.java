@@ -22,21 +22,35 @@ public class Area_Rectangulos extends AppCompatActivity {
     }
     public void calcular(View v){
         String medidas[];
-        String op = "Area Rectangulo";
+        String op = getString(R.string.area_rectangulo);
         String area;
         float bas;
         float altur;
         operaciones o;
-
         medidas = new String[2];
-        bas = Float.parseFloat(base.getText().toString());
-        altur = Float.parseFloat(altura.getText().toString());
-        medidas[0] = String.format("Base: %.2f", bas);
-        medidas[1] = String.format("Altura %.2f", altur);
-        area = Float.toString((bas * altur) );
-        o =  new operaciones(op, medidas, area);
-        o.guardar();
-        resultado.setText(area);
+        if (validar()) {
+            bas = Float.parseFloat(base.getText().toString());
+            altur = Float.parseFloat(altura.getText().toString());
+            medidas[0] = String.format(getString(R.string.salida_base)+" %.2f", bas);
+            medidas[1] = String.format(getString(R.string.salida_altura)+" %.2f", altur);
+            area = Float.toString((bas * altur));
+            o = new operaciones(op, medidas, area);
+            o.guardar();
+            resultado.setText(area);
+        }
+    }
+    public boolean validar(){
+        if (base.getText().toString().isEmpty()){
+            base.setError(getString(R.string.error_vacio));
+            base.requestFocus();
+            return false;
+        }
+        if (altura.getText().toString().isEmpty()){
+            altura.setError(getString(R.string.error_vacio));
+            altura.requestFocus();
+            return false;
+        }
+        return true;
     }
     public void Limpiar(View v){
         base.setText("");

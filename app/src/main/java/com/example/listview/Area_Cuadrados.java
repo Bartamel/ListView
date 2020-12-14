@@ -23,19 +23,27 @@ public class Area_Cuadrados extends AppCompatActivity {
         String lado[];
         float lados;
         String area;
-        String op = "Area Cuadrado";
+        String op = getString(R.string.area_cuadrado);
         operaciones o;
-
-        lado = new String[3];
-        lados = Float.parseFloat(lad.getText().toString());
-        lado[0] = String.format("Lado: %.2f", lados);
-        lado[1] = "";
-        lado[2] = "";
-        area = Float.toString(lados * lados);
-        System.out.println(area);
-        o = new operaciones(op, lado, area);
-        o.guardar();
-        resultado.setText(area);
+        lado = new String[2];
+        if(validar()) {
+            lados = Float.parseFloat(lad.getText().toString());
+            lado[0] = String.format(getString(R.string.salida_lado)+" %.2f", lados);
+            lado[1] = "";
+            area = Float.toString(lados * lados);
+            System.out.println(area);
+            o = new operaciones(op, lado, area);
+            o.guardar();
+            resultado.setText(area);
+        }
+    }
+    public boolean validar(){
+        if(lad.getText().toString().isEmpty()){
+            lad.setError(getString(R.string.error_vacio));
+            lad.requestFocus();
+            return false;
+        }
+        return true;
     }
     public void Limpiar(View v){
         lad.setText("");

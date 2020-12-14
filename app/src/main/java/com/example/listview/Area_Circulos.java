@@ -20,22 +20,31 @@ public class Area_Circulos extends AppCompatActivity {
     }
     public void Calcular(View v){
         String medidas[];
-        medidas = new String[3];
+        medidas = new String[2];
         float rad, pi;
         String area;
-        String op = "Area Circulo";
+        String op = getString(R.string.area_circulo);
         operaciones o;
 
-        rad = Float.parseFloat(radio.getText().toString());
-        pi = (float) Math.PI;
-        medidas[0] = String.format("Radio: %.2f",rad);
-        medidas[1] = String.format("Pi: %.2f",pi);
-        medidas[2] = "";
-        area = Float.toString(pi*rad*rad);
-        o = new operaciones(op, medidas, area);
-        o.guardar();
-        resultado.setText(area);
+        if (validar()) {
+            rad = Float.parseFloat(radio.getText().toString());
+            pi = (float) Math.PI;
+            medidas[0] = String.format(getString(R.string.salida_radio)+" %.2f", rad);
+            medidas[1] = "";
+            area = Float.toString(pi * rad * rad);
+            o = new operaciones(op, medidas, area);
+            o.guardar();
+            resultado.setText(area);
+        }
 
+    }
+    public boolean validar(){
+        if (radio.getText().toString().isEmpty()){
+            radio.setError(getString(R.string.error_vacio));
+            radio.requestFocus();
+            return false;
+        }
+        return true;
     }
     public void Limpiar(View v){
         radio.setText("");

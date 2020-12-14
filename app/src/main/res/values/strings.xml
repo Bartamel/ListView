@@ -27,6 +27,19 @@
     <string name="profundidad">Profundidad</string>
     <string name="calcular">CALCULAR</string>
     <string name="borrar">BORRAR</string>
+    <string name="error_vacio">Ingrese un valor</string>
+    <string name="salida_radio">Radio:</string>
+    <string name="salida_altura">Altura:</string>
+    <string name="salida_lado">Lado:</string>
+    <string name="area_circulo">Area Circulo</string>
+    <string name="area_cuadrado">Area Cuadrado</string>
+    <string name="area_rectangulo">Area Rectangulo</string>
+    <string name="salida_base">Base:</string>
+    <string name="area_triangulo">Area Triángulo</string>
+    <string name="volumen_cilindro">Volumen Cilindro</string>
+    <string name="volumen_cono">Volumen Cono</string>
+    <string name="volumen_cubo">Volumen Cubo</string>
+    <string name="volumen_esfera">Volumen Esfera</string>
     <string-array name="opciones">
         <item>@string/area</item>
         <item>@string/volumenes</item>

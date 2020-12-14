@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ListView</string>
+    <string name="titulo">OPTIONS</string>
+    <string name="area">AREAS</string>
+    <string name="volumen">VOLUMES</string>
+    <string name="operaciones">OPERATIONS PERFORMED</string>
+    <string name="tituloareas">AREAS</string>
+    <string name="cuadrado">SQUARE</string>
+    <string name="rectangulo">RECTANGLE</string>
+    <string name="triangulo">TRIANGLE</string>
+    <string name="circulo">CIRCLE</string>
+    <string name="volumenes">VOLUMES</string>
+    <string name="esfera">SPHERE</string>
+    <string name="cilindro">CYLINDER</string>
+    <string name="cono">CONE</string>
+    <string name="cubo">CUBE</string>
+    <string name="realizadas">PERFORMED</string>
+    <string name="numero">No.</string>
+    <string name="operacion">Operation</string>
+    <string name="datos">Data</string>
+    <string name="resultados">Results</string>
+    <string name="valor_lado">Side value</string>
+    <string name="valor">Value</string>
+    <string name="base">Base</string>
+    <string name="altura">Height</string>
+    <string name="radio">Radio</string>
+    <string name="profundidad">Depth</string>
+    <string name="calcular">CALCULATE</string>
+    <string name="borrar">CLEAN</string>
+    <string name="error_vacio">Type a value</string>
+    <string name="salida_radio">Radio:</string>
+    <string name="salida_altura">Height:</string>
+    <string name="salida_lado">Side:</string>
+    <string name="area_circulo">Circle Area</string>
+    <string name="area_cuadrado">Square Area</string>
+    <string name="area_rectangulo">Rectangle Area</string>
+    <string name="salida_base">Base:</string>
+    <string name="area_triangulo">Triangle Area</string>
+    <string name="volumen_cilindro">Cylinder Volume</string>
+    <string name="volumen_cono">Cone Volume</string>
+    <string name="volumen_cubo">Cube Volume</string>
+    <string name="volumen_esfera">Sphere Volume</string>
+</resources>
