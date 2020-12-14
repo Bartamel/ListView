@@ -29,7 +29,21 @@ public class Volumenes extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        intent = new Intent(Volumenes.this)
+                        intent = new Intent(Volumenes.this, Vol_Esfera.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent = new Intent(Volumenes.this, Vol_Cilindro.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent = new Intent(Volumenes.this, Vol_Cono.class);
+                        startActivity(intent);
+                        break;
+                    case 3:
+                        intent = new Intent(Volumenes.this, Vol_Cubo.class);
+                        startActivity(intent);
+                        break;
                 }
             }
         });
