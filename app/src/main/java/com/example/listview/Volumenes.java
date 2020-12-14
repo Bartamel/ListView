@@ -9,11 +9,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import static android.R.layout.simple_list_item_1;
+
 public class Volumenes extends AppCompatActivity {
     private ListView lista_volumenes;
     private String opcion_volumen[];
     private ArrayAdapter<String> adapter;
     private Intent intent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +25,7 @@ public class Volumenes extends AppCompatActivity {
 
         lista_volumenes = findViewById(R.id.lstvolumen);
         opcion_volumen = getResources().getStringArray(R.array.opciones_volumen);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, opcion_volumen);
+        adapter = new ArrayAdapter<>(this, simple_list_item_1, opcion_volumen);
         lista_volumenes.setAdapter(adapter);
         lista_volumenes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

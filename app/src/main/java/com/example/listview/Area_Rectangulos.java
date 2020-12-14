@@ -28,12 +28,11 @@ public class Area_Rectangulos extends AppCompatActivity {
         float altur;
         operaciones o;
 
-        medidas = new String[3];
+        medidas = new String[2];
         bas = Float.parseFloat(base.getText().toString());
         altur = Float.parseFloat(altura.getText().toString());
         medidas[0] = String.format("Base: %.2f", bas);
         medidas[1] = String.format("Altura %.2f", altur);
-        medidas[2] = "";
         area = Float.toString((bas * altur) );
         o =  new operaciones(op, medidas, area);
         o.guardar();
